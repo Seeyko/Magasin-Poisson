@@ -1,0 +1,459 @@
+@import
+	url(https://fonts.googleapis.com/css?family=Noto+Sans:400,800,700,300);
+
+.navbar {
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 1;
+	z-index: 2;
+	height: 5%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	flex-direction: row;
+	flex-basis: auto;
+	align-items: center;
+	justify-content: center;
+	padding: 1%;
+	align-items: center;
+	transition: all 1s ease 0s;
+	
+}
+
+.solid {
+	background-color: floralwhite;
+	opacity: 0.9;
+	padding-bottom: 1.2%;	
+}
+
+.navbar * {
+	color: black;
+	margin-left: 20px;
+	margin-right: 20px;
+	opacity : 1;
+}
+
+* {
+	font-family: 'Noto Sans';
+	color: black;
+}
+
+body:not(footer):not(nav) {
+	
+	background: linear-gradient(to left bottom, #26f0d5, #00e4ea, #00d7f8, #00c8fe, #4eb7fa, #57b7fa, #5fb8fb, #67b8fb, #4ecaff, #3ddcff, #44ecff, #5ffbfb);
+	height: 100%;
+    margin: 5%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+footer {
+	position: fixed;
+	bottom: 0;
+	height: 9%;
+	background-color: floralwhite;
+	justify-content : center;
+	width: 100%;
+	left: 0px;
+	display: flex;
+	flex-direction: row;
+	color: black;	
+}
+
+footer * {
+	margin: 1% 0 0 1%;
+}
+
+
+.menuItem:hover {
+	background-color: #4faff7;
+}
+
+.menuItem {
+	transition: 1s all;
+	-webkit-transition: 1s all;
+	background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, rgba(0
+		, 0, 0, .15) 25%, rgba(0, 0, 0, .15) 50%, transparent 50%, transparent
+		75%, rgba(0, 0, 0, .15) 75%);
+	background-size: 8px 8px;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, .4) inset, 0 0 20px -5px
+		rgba(0, 0, 0, .4), 0 0 0px 3px #FFF inset;
+	background-color: #3373af;
+	padding: 14px 20px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	color: white;
+	border: none;
+	width: inherit;
+	max-width: 25%;
+}
+
+.panier {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.produitList {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 3%;
+	width: 100%
+}
+
+.listPanier {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width : 80%;
+	flex-grow : 3;
+}
+.panierInfo{
+	justify-content: end;
+	width: 20%
+}
+.panierItem {
+	display: flex;
+	flex-direction: column;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	border: 2px solid blue;
+}
+
+.qte{
+	width: 10%;
+}
+
+fieldset input{
+	width: 4%;
+	max-width: 4%;
+}
+div:not(.container) > select{
+	width: 70%;
+}
+
+
+#produitAction {
+	min-width: 25%;
+}
+
+#produitAction form * {
+	margin: 1%;
+}
+
+.produitImg {
+	height: 220px;
+	width: 300px;
+}
+
+.produitPage {
+	display: flex;
+	flex-direction: row;
+}
+
+.infoItem{
+	align-items: center;
+}
+
+.imgCaroussel {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	margin: 0% 2% 3% 2%;
+	border: 5px solid #6898ff;
+}
+
+.imgCaroussel .produitImg {
+	transition: all .5s;
+	opacity: 1;
+}
+
+.produitImg:hover {
+	opacity: 0.5;
+}
+
+
+.imgForm {
+	max-width: 50%;
+	display: flex;
+	word-wrap: break-word;
+	flex-direction: column;
+	position: absolute;
+	transition: all 1s;
+}
+
+/* Full-width input fields */
+input,
+	select {
+	width: 100%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input, select:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+	
+.desc {
+	background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, rgba(0
+		, 0, 0, .15) 25%, rgba(0, 0, 0, .15) 50%, transparent 50%, transparent
+		75%, rgba(0, 0, 0, .15) 75%);
+	background-size: 20px 20px;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, .4) inset, 0 0 20px -5px
+		rgba(0, 0, 0, .4), 0 0 0px 3px #FFF inset;
+	background-color: #3373cf;
+	padding: 5px 10px;
+	margin-top: 3%;
+	text-align: center;
+	overflow: hidden;
+	white-space: normal;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 400px;
+}
+
+.form * {
+	margin-bottom: 0.7%;
+}
+
+.buttonAdd {
+	margin: auto;
+	padding: 0;
+	border: medium;
+	border: medium solid black;
+	font-size: 14px;
+	width: 150px;
+}
+
+.buttonAdd:hover {
+	background-color: #4CAF10;
+}
+/* Set a style for all buttons */
+button, input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 1%;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	width: inherit;
+	transition: 1s all;
+	
+}
+
+.imgButton {
+	color: black;
+	z-index: 5000;
+}
+
+button:not(.desc):hover {
+	background-color: #80ff00;
+	
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+	padding: 14px 20px;
+	background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+	float: left;
+	width: 45%;
+}
+
+/* Add padding to container elements */
+.container {
+	padding: 16px;
+}
+/* The Modal (background) */
+.modal {
+	color: black;
+	display: block; /* Hidden by default */
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	padding-top: 1%;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto;
+	/* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 35px;
+	top: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #f1f1f1;
+}
+
+.close:hover, .close:focus {
+	color: #f44336;
+	cursor: pointer;
+}
+
+#commandeList {
+	display: flex;
+	flex-direction: column;
+	background: gray;
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+
+.commande {
+	margin: 1%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.commandeDetail:first-child {
+	max-width: 10%;
+	min-width: 10%;
+}
+
+.commandeDetail {
+	width: 100%;
+	margin: 1%;
+}
+
+/* Clear floats */
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+	.cancelbtn, .signupbtn {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	
+	body:not(footer):not(nav) {
+		margin-top: 6%;
+	}
+	nav {
+		font-size: 15px;
+	}
+	.sidebar {
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	body:not(footer):not(nav) {
+		margin-top: 7%;
+	}
+	nav {
+		font-size: 12px;
+	}
+	.menuItem {
+		padding: 10px 15px;
+		max-width: 20%;
+	}
+	.sidebar {
+		font-size: 18px;
+	}
+	
+}
+
+@media screen and (max-width: 1000px) {
+	.modal-content {
+		margin-top: 20%;
+	}
+	body:not(footer):not(nav) {
+		margin-top: 15%;
+	}
+	nav {
+		font-size: 9px;
+	}
+	.sidebar {
+		font-size: 10px;
+	}
+	.menuItem {
+		padding: 7px 4px;
+		max-width: 17%;
+	}
+}
+
+.ocean {
+	z-index: -1;
+	height: 3%;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #015871;
+	opacity: 0.5;
+}
+
+.wave {
+	z-index: -1;
+	opacity: 0.5;
+	background: 	url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+	position: absolute;
+	top: -198px;
+	width: 6400px;
+	height: 198px;
+	animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+	transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+	top: -175px;
+	animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite,
+		swell 7s ease -1.25s infinite;
+	opacity: 0.8;
+}
+
+@keyframes wave { 
+	0% {
+	margin-left: 0;
+	}
+	100%{
+		margin-left:-1600px;
+	}
+}
+@keyframes swell { 
+	0%, 100% {
+	transform: translate3d(0, -25px, 0);
+	}
+	50%{
+	transform: translate3d(0,5px,0);
+	}
+}

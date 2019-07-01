@@ -1,0 +1,12 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+node_modules/**/*
+.expo/*
+npm-debug.*
+*.jks
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+web-report/
